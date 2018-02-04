@@ -1,0 +1,340 @@
+body{
+	margin: 0px;
+	padding: 0px;
+    
+}
+										/*Стили для главной страницы*/
+
+.ssilka1:visited{
+	color: aqua;
+	text-decoration: none;
+    
+}
+.ssilka2:visited{
+	color:beige;
+}
+.ssilka3:visited{
+	color: yellow;
+}
+.ssilka4:visited{
+	color: red;
+}
+.ssilka:hover{
+	color:black;
+	text-decoration: none;
+}
+.ssilka{
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bolder;
+	color: black;
+	text-decoration: none;
+}
+.main{
+	position: relative;
+    background: url(images/main.jpg)center;
+    background-size: cover;
+	margin: 0px;
+	padding: 0px;
+	width:1920px;
+	height: 1080px;
+}
+.center{
+	text-align: center;
+	vertical-align: middle;
+}
+.center:hover{
+    transform: scale(1.5);
+}
+.divcom{
+	position: fixed;
+	margin: 0px;
+	padding: 0px;
+	transition-duration: 0.5s;
+}
+
+.top{
+	width: 1920px;
+	height: 0px;
+	top: 0px;
+	left:0px;
+	background-color: aqua;
+	transition-property: height;
+}
+.right{
+	height: 100%;
+	width: 0px;
+	right: 0px;
+	top:0px;
+	background-color: beige;
+	transition-property: width;
+}
+.bot{
+	height: 0px;
+	width: 1920px;
+	left: 0px;
+	bottom:0px;
+	background-color: yellow;
+	transition-property: height;
+}
+.left{
+	height: 100%;
+	width: 0px;
+	left: 0px;
+	top:0px;
+	background-color: red;
+	transition-property: width;
+}
+.txt{
+	position: absolute;
+	width: 100px;
+	height: 80px;
+	margin: 0px;
+	padding: 0px;
+	transition-duration: 0.5s;
+}
+.top1{
+	top: 0px;
+	left:50%;
+}
+.right1{
+	right: 0px;
+	top: 50%;
+}
+.bot1{
+	left: 50%;
+	bottom:0px;
+}
+.left1{
+	left: 0px;
+	top:50%;
+}
+.top1:hover .top{
+	height: 70px;
+}
+.top1:hover{
+	padding-top: 100px;
+}
+.right1:hover .right{
+	width: 70px;
+}
+.right1:hover{
+	margin-right: 100px;
+}
+.bot1:hover .bot{
+	height: 70px;
+}
+.bot1:hover{
+	margin-bottom: 70px;
+}
+.left1:hover .left{
+	width: 70px;
+}
+.left1:hover{
+	padding-left: 100px;
+}
+										/*Стили страница 2*/
+.width{
+	width: 100%;
+	transition: all 0.5s ease-out 0s;
+}
+.b2{
+	background-color: grey;
+	padding-top: 200px;
+	width: 100%;
+	top: 0px;
+}
+.h{
+	overflow: hidden;
+}
+.opacity{
+	opacity: 0;
+}
+.relative{
+	position: relative;
+	text-align: center;
+}
+.r{
+	padding: 0px !important;
+}
+.absolute{
+	position: absolute;
+}
+.back{
+	background: url(images/1.jpg);
+	background-position: center;
+}
+.viezd{
+	bottom:-400px;
+	text-align: center;
+	width: 100%;
+	background-color: green;
+	padding-top:200px;
+}
+.hover:hover .scale{
+	transform: scale(1.5);
+}
+.hover:hover .b2{
+	opacity: 0;
+	transition-duration: 0.8s;
+}
+.hover:hover .viezd{
+	opacity: 1;
+	transition-duration: 1.5s;
+	transform: translateY(-400px) ;
+}
+.hover:hover .text{
+	transform: rotate(720deg);
+	transition: 1s;
+	color: black;
+	font-style:italic;
+}
+.text{
+	text-align:center;
+}
+a:link{
+	text-decoration: none;
+}
+@media screen and (min-width: 100px) and (max-width: 200px) {
+	.h{
+		height: 100px;
+		}
+	.viezd{
+		padding-top:40px;
+	}
+	.b2{
+		padding-top:40px;
+	}
+	.text{
+		font-size: 7pt;
+	}
+}
+@media screen and (min-width: 200px) and (max-width: 300px) {
+	.h{
+		height: 150px;
+		} 
+	.viezd{
+		padding-top:70px;
+	}
+	.b2{
+		padding-top:70px;
+	}
+	.text{
+		font-size: 9pt;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+	.h{
+		height: 200px;
+		}
+	.viezd{
+		padding-top:100px;
+	}
+	.b2{
+		padding-top:100px;
+	}
+	.text{
+		font-size: 11pt;
+	}	 
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+	.h{
+		height: 250px;
+		}
+	.viezd{
+		padding-top:120px;
+	}
+	.b2{
+		padding-top:120px;
+	}
+	.text{
+		font-size: 13pt;
+	}	 
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.h{
+		
+		height: 300px;
+		}
+	.viezd{
+		padding-top:140px;
+	}
+	.b2{
+		padding-top:140px;
+	}
+	.text{
+		font-size: 15pt;
+	}	 
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.h{
+		
+		height: 400px;
+		}
+	.viezd{
+		padding-top:190px;
+	}
+	.b2{
+		padding-top:190px;
+	}
+	.text{
+		font-size: 17pt;
+	}	 
+}
+@media screen and (min-width: 1200px)  {
+	.h{
+		
+		height: 400px;
+		}
+	.viezd{
+		padding-top:190px;
+	}
+	.b2{
+		padding-top:190px;
+	}
+	.text{
+		font-size: 19pt;
+	}	 
+}
+                                        /*Стили страница 3*/
+.body3{
+    padding: 30px;
+    padding-bottom: 40px;
+}
+.razmer{
+	height: 100% !important;
+	overflow:hidden;
+}
+
+.text1{
+    text-align: center;
+    font-style: italic;
+    font-size: 18pt;
+}
+.text2{
+    text-align: justify;
+}
+                                         /*Стили страница 4*/
+.bodyotpravka{
+    background-color: beige;
+}
+                                      
+                                        /*Стили страница 5*/
+
+.myfoto{
+    width:100% ;
+    padding-top: 70px;
+}
+                                          /*Стили footer*/
+
+.textfooter{
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: bold;
+}
+.empty{
+    height:150px;
+}
+.space{
+    margin-right: 5px; 
+}
